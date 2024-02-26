@@ -2,7 +2,7 @@
 
 ## Overview
 
-This README document provides comprehensive instructions and information about a Python script designed to automate interactions on a DataCamp practice page. The script is built using Selenium with the help of `undetected_chromedriver` to avoid detection mechanisms, allowing for automated keyboard inputs on the practice page.
+This Python script is designed to automate interactions on a DataCamp practice page and generate XP effortlessly. The script is built using Selenium with the help of undetected_chromedriver to avoid detection mechanisms, allowing for automated keyboard inputs on the practice page.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ Before using this script, ensure you have the following prerequisites installed 
 
 - Python 3.x
 - Selenium
-- `undetected_chromedriver` package
+- undetected_chromedriver
 - Google Chrome Browser
 - ChromeDriver
 
@@ -22,7 +22,7 @@ Before using this script, ensure you have the following prerequisites installed 
 
 `pip install selenium`
 
-3. **`undetected_chromedriver`**: This package is used to bypass bot detection mechanisms in Selenium. Install it using pip:
+3. **undetected_chromedriver**: This package is used to bypass bot detection mechanisms in Selenium. Install it using pip:
 
 `pip install undetected-chromedriver`
 
@@ -34,7 +34,7 @@ Before using this script, ensure you have the following prerequisites installed 
 
 1. **Script Configuration**: The script prompts you for your DataCamp email and password. Your password will be securely input without being displayed on the screen. 
 
-2. **Google Chrome Binary Location**: The script will also prompt for the Google Chrome binary location. The default value is `"/usr/bin/google-chrome-stable"`. If your Google Chrome is located elsewhere, please provide the correct path when prompted.
+2. **Google Chrome Binary Location**: The script will also prompt for the Google Chrome binary location. The default value is `"/usr/bin/google-chrome-stable"`. If your Google Chrome is located elsewhere, please provide the correct path when prompted. On linux you can find out your binary location by typing `which google-chrome` or `which google-chrome-stable` in your terminal.
 
 ## Usage
 
@@ -42,7 +42,7 @@ Before using this script, ensure you have the following prerequisites installed 
 
 `python datacamp_xp_farm.py`
 
-2. **Follow Prompts**: Enter your DataCamp email when prompted. Use the `getpass` prompt to securely enter your password. If necessary, enter the custom path to your Google Chrome binary or press Enter to use the default.
+2. **Follow Prompts**: Enter your DataCamp email and password when prompted. If necessary, enter the custom path to your Google Chrome binary or press Enter to use the default.
 
 3. **Script Execution**: After inputting the necessary information, the script will automatically navigate to the specified DataCamp practice page, log in with your credentials, and begin the automated interaction sequence.
 
