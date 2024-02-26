@@ -1,4 +1,4 @@
-# README for DataCamp Practice Script
+# Datacamp XP Farm
 
 ## Overview
 
